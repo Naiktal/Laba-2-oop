@@ -30,7 +30,7 @@ class Library:
             self.books = []
 
     def get_next_book_id(self) -> int:
-        if self.books == None:
+        if not(self.books):
             return 1
         else:
             return len(self.books) + 1
